@@ -30,3 +30,9 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
