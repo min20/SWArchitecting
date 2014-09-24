@@ -1,0 +1,193 @@
+\hypertarget{classbasic_server_1_1_thread_pool_dispatcher}{\section{basic\+Server.\+Thread\+Pool\+Dispatcher 클래스 참조}
+\label{classbasic_server_1_1_thread_pool_dispatcher}\index{basic\+Server.\+Thread\+Pool\+Dispatcher@{basic\+Server.\+Thread\+Pool\+Dispatcher}}
+}
+
+
+basic\+Server.\+Thread\+Pool\+Dispatcher에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classbasic_server_1_1_thread_pool_dispatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+basic\+Server.\+Thread\+Pool\+Dispatcher에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classbasic_server_1_1_thread_pool_dispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a26fda3271602b19753ce6e2d6d9b308a}{Thread\+Pool\+Dispatcher} ()
+\item 
+void \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a5311a036b85df65c640d955f253ecc83}{dispatch} (final Server\+Socket server\+Socket, final \hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map} handle\+Map)
+\item 
+void \hyperlink{interfacebasic_server_1_1_dispatcher_a9a8d3e47b27a6161f8f39bf63fa9e198}{dispatch} (Server\+Socket server\+Socket, \hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map} handle\+Map)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32}{dispatch\+Loop} (Server\+Socket server\+Socket, \hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map} handle\+Map)
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a0c78b67cc799e2aa23038d96e9bf9af8}{num\+Threads}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+
+
+Thread\+Pool\+Dispatcher.\+java 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\hypertarget{classbasic_server_1_1_thread_pool_dispatcher_a26fda3271602b19753ce6e2d6d9b308a}{\index{basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}!Thread\+Pool\+Dispatcher@{Thread\+Pool\+Dispatcher}}
+\index{Thread\+Pool\+Dispatcher@{Thread\+Pool\+Dispatcher}!basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}}
+\subsubsection[{Thread\+Pool\+Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}basic\+Server.\+Thread\+Pool\+Dispatcher.\+Thread\+Pool\+Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_thread_pool_dispatcher_a26fda3271602b19753ce6e2d6d9b308a}
+
+
+Thread\+Pool\+Dispatcher.\+java 파일의 20 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+20                                   \{
+21         \textcolor{comment}{// 시스템 정보의 스레드 개수를 가져오거나, 없으면 우리가 설정한 값을 사용함}
+22         \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a0c78b67cc799e2aa23038d96e9bf9af8}{numThreads} = Integer.parseInt(System.getProperty(THREAD\_PROP, NUM\_THREADS));
+23     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\hypertarget{interfacebasic_server_1_1_dispatcher_a9a8d3e47b27a6161f8f39bf63fa9e198}{\index{basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}}
+\subsubsection[{dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Dispatcher.\+dispatch (
+\begin{DoxyParamCaption}
+\item[{Server\+Socket}]{server\+Socket, }
+\item[{{\bf Handle\+Map}}]{handle\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inherited]}}}\label{interfacebasic_server_1_1_dispatcher_a9a8d3e47b27a6161f8f39bf63fa9e198}
+
+
+\hyperlink{classbasic_server_1_1_thread_per_dispatcher_af7be4592fa9f81c011985b4e0c0c3b2a}{basic\+Server.\+Thread\+Per\+Dispatcher}에서 구현되었습니다.
+
+\hypertarget{classbasic_server_1_1_thread_pool_dispatcher_a5311a036b85df65c640d955f253ecc83}{\index{basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}}
+\subsubsection[{dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Thread\+Pool\+Dispatcher.\+dispatch (
+\begin{DoxyParamCaption}
+\item[{final Server\+Socket}]{server\+Socket, }
+\item[{final {\bf Handle\+Map}}]{handle\+Map}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_thread_pool_dispatcher_a5311a036b85df65c640d955f253ecc83}
+
+
+Thread\+Pool\+Dispatcher.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+26                                                                                      \{
+27         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} idx\_thread = 0; idx\_thread < (\hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a0c78b67cc799e2aa23038d96e9bf9af8}{numThreads} - 1); idx\_thread++) \{
+28             Thread thread = \textcolor{keyword}{new} Thread() \{
+29                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+30                     \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32}{dispatchLoop}(serverSocket, handleMap);
+31                 \}
+32             \};
+33             thread.start();
+34             
+35             System.out.println(\textcolor{stringliteral}{"CREATE / START Thread: "} + thread.getName());
+36         \}
+37         System.out.println(\textcolor{stringliteral}{"INTERATIVE SERVER STARTED IN MAIN THREAD: "} + Thread.currentThread().getName())
+      ;
+38         
+39         \hyperlink{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32}{dispatchLoop}(serverSocket, handleMap);
+40     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_thread_pool_dispatcher_a5311a036b85df65c640d955f253ecc83_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_thread_pool_dispatcher_a5311a036b85df65c640d955f253ecc83_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32}{\index{basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}!dispatch\+Loop@{dispatch\+Loop}}
+\index{dispatch\+Loop@{dispatch\+Loop}!basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}}
+\subsubsection[{dispatch\+Loop}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Thread\+Pool\+Dispatcher.\+dispatch\+Loop (
+\begin{DoxyParamCaption}
+\item[{Server\+Socket}]{server\+Socket, }
+\item[{{\bf Handle\+Map}}]{handle\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32}
+
+
+Thread\+Pool\+Dispatcher.\+java 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+42                                                                               \{
+43         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+44             \textcolor{keywordflow}{try} \{
+45                 Socket socket = serverSocket.accept();
+46 
+47                 Demultiplexer demultiplexer = \textcolor{keyword}{new} Demultiplexer(socket, handleMap);
+48                 Thread thread = \textcolor{keyword}{new} Thread(demultiplexer);
+49 
+50                 thread.start();
+51             \} \textcolor{keywordflow}{catch} (IOException e) \{
+52                 e.printStackTrace();
+53             \}
+54         \}
+55     \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_thread_pool_dispatcher_a80411d17546dd5ff40af166ef50e2e32_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\hypertarget{classbasic_server_1_1_thread_pool_dispatcher_a0c78b67cc799e2aa23038d96e9bf9af8}{\index{basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}!num\+Threads@{num\+Threads}}
+\index{num\+Threads@{num\+Threads}!basic\+Server\+::\+Thread\+Pool\+Dispatcher@{basic\+Server\+::\+Thread\+Pool\+Dispatcher}}
+\subsubsection[{num\+Threads}]{\setlength{\rightskip}{0pt plus 5cm}int basic\+Server.\+Thread\+Pool\+Dispatcher.\+num\+Threads\hspace{0.3cm}{\ttfamily [private]}}}\label{classbasic_server_1_1_thread_pool_dispatcher_a0c78b67cc799e2aa23038d96e9bf9af8}
+
+
+Thread\+Pool\+Dispatcher.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/basic\+Server/\hyperlink{_thread_pool_dispatcher_8java}{Thread\+Pool\+Dispatcher.\+java}\end{DoxyCompactItemize}

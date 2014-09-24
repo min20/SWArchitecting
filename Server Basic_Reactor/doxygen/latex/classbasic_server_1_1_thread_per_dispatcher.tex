@@ -1,0 +1,89 @@
+\hypertarget{classbasic_server_1_1_thread_per_dispatcher}{\section{basic\+Server.\+Thread\+Per\+Dispatcher 클래스 참조}
+\label{classbasic_server_1_1_thread_per_dispatcher}\index{basic\+Server.\+Thread\+Per\+Dispatcher@{basic\+Server.\+Thread\+Per\+Dispatcher}}
+}
+
+
+single thread dispatcher. Demultiplexer를 실행시킨다.  
+
+
+
+
+basic\+Server.\+Thread\+Per\+Dispatcher에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classbasic_server_1_1_thread_per_dispatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+basic\+Server.\+Thread\+Per\+Dispatcher에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classbasic_server_1_1_thread_per_dispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classbasic_server_1_1_thread_per_dispatcher_af7be4592fa9f81c011985b4e0c0c3b2a}{dispatch} (Server\+Socket server\+Socket, \hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map} handle\+Map)
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+single thread dispatcher. Demultiplexer를 실행시킨다. 
+
+\begin{DoxyDate}{날짜}
+2014-\/09-\/24 
+\end{DoxyDate}
+\begin{DoxyAuthor}{작성자}
+min 
+\end{DoxyAuthor}
+
+
+Thread\+Per\+Dispatcher.\+java 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\hypertarget{classbasic_server_1_1_thread_per_dispatcher_af7be4592fa9f81c011985b4e0c0c3b2a}{\index{basic\+Server\+::\+Thread\+Per\+Dispatcher@{basic\+Server\+::\+Thread\+Per\+Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!basic\+Server\+::\+Thread\+Per\+Dispatcher@{basic\+Server\+::\+Thread\+Per\+Dispatcher}}
+\subsubsection[{dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Thread\+Per\+Dispatcher.\+dispatch (
+\begin{DoxyParamCaption}
+\item[{Server\+Socket}]{server\+Socket, }
+\item[{{\bf Handle\+Map}}]{handle\+Map}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_thread_per_dispatcher_af7be4592fa9f81c011985b4e0c0c3b2a}
+
+
+\hyperlink{interfacebasic_server_1_1_dispatcher_a9a8d3e47b27a6161f8f39bf63fa9e198}{basic\+Server.\+Dispatcher}를 구현.
+
+
+
+Thread\+Per\+Dispatcher.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+15                                                                          \{
+16         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+17             \textcolor{keywordflow}{try} \{
+18                 Socket socket = serverSocket.accept();
+19 
+20                 Demultiplexer demultiplexer = \textcolor{keyword}{new} Demultiplexer(socket, handleMap);
+21                 Thread thread = \textcolor{keyword}{new} Thread(demultiplexer);
+22 
+23                 thread.start();
+24             \} \textcolor{keywordflow}{catch} (IOException e) \{
+25                 e.printStackTrace();
+26             \}
+27         \}
+28     \}
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/basic\+Server/\hyperlink{_thread_per_dispatcher_8java}{Thread\+Per\+Dispatcher.\+java}\end{DoxyCompactItemize}

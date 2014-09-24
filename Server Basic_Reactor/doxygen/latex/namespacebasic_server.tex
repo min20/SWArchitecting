@@ -1,0 +1,20 @@
+\hypertarget{namespacebasic_server}{\section{basic\+Server 패키지}
+\label{namespacebasic_server}\index{basic\+Server@{basic\+Server}}
+}
+\subsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbasic_server_1_1_demultiplexer}{Demultiplexer}
+\begin{DoxyCompactList}\small\item\em Input Stream에서 header를 읽고 적절한 event handler를 부른다. \end{DoxyCompactList}\item 
+interface \hyperlink{interfacebasic_server_1_1_dispatcher}{Dispatcher}
+\begin{DoxyCompactList}\small\item\em dispatcher의 D\+I를 위한 인터페이스 \end{DoxyCompactList}\item 
+class \hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map}
+\begin{DoxyCompactList}\small\item\em header와 그에 대응하는 event handler를 기억함 \end{DoxyCompactList}\item 
+class \hyperlink{classbasic_server_1_1_main}{Main}
+\begin{DoxyCompactList}\small\item\em main함수를 갖고 있다. reactor를 new하고 실행시킨다. \end{DoxyCompactList}\item 
+class \hyperlink{classbasic_server_1_1_reactor}{Reactor}
+\begin{DoxyCompactList}\small\item\em dispatcher 관리, header와 대응되는 event handler를 관리. \end{DoxyCompactList}\item 
+class \hyperlink{classbasic_server_1_1_thread_per_dispatcher}{Thread\+Per\+Dispatcher}
+\begin{DoxyCompactList}\small\item\em single thread dispatcher. Demultiplexer를 실행시킨다. \end{DoxyCompactList}\item 
+class \hyperlink{classbasic_server_1_1_thread_pool_dispatcher}{Thread\+Pool\+Dispatcher}
+\end{DoxyCompactItemize}

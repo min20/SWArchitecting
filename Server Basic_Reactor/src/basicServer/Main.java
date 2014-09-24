@@ -5,6 +5,12 @@ import org.apache.log4j.Logger;
 import eventHandler.StreamSayHelloEventHandler;
 import eventHandler.StreamUpdateProfileEventHandler;
 
+/**
+ * @class Main
+ * @date 2014-09-24
+ * @author min
+ * @brief main함수를 갖고 있다. reactor를 new하고 실행시킨다.  
+ */
 public class Main {
 	private static Logger logger = Logger.getLogger(Main.class.getName()); 
 

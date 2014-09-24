@@ -8,6 +8,13 @@ import java.net.Socket;
 
 import org.apache.log4j.Logger;
 
+
+/**
+ * @class Demultiplexer
+ * @date 2014-09-24
+ * @author min
+ * @brief Input Stream에서 header를 읽고 적절한 event handler를 부른다.  
+ */
 public class Demultiplexer implements Runnable {
 	private static Logger logger = Logger.getLogger(Demultiplexer.class.getName());
 	

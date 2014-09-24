@@ -1,0 +1,4 @@
+<map id="basicServer.Reactor.startServer" name="basicServer.Reactor.startServer">
+<area shape="rect" id="node2" href="$classbasic_server_1_1_thread_pool_dispatcher.html#a5311a036b85df65c640d955f253ecc83" title="basicServer.ThreadPoolDispatcher.dispatch" alt="" coords="224,11,504,37"/>
+<area shape="rect" id="node3" href="$classbasic_server_1_1_thread_pool_dispatcher.html#a80411d17546dd5ff40af166ef50e2e32" title="basicServer.ThreadPoolDispatcher.dispatchLoop" alt="" coords="552,11,862,37"/>
+</map>

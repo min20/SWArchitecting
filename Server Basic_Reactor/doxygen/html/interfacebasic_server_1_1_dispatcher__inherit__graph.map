@@ -1,0 +1,4 @@
+<map id="basicServer.Dispatcher" name="basicServer.Dispatcher">
+<area shape="rect" id="node2" href="$classbasic_server_1_1_thread_per_dispatcher.html" title="single thread dispatcher. Demultiplexer를 실행시킨다. " alt="" coords="5,155,227,229"/>
+<area shape="rect" id="node3" href="$classbasic_server_1_1_thread_pool_dispatcher.html" title="{basicServer.ThreadPoolDispatcher\n|~ NUM_THREADS\l~ THREAD_PROP\l&#45; numThreads\l|+ ThreadPoolDispatcher()\l+ dispatch()\l&#45; dispatchLoop()\l}" alt="" coords="250,129,477,255"/>
+</map>

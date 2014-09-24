@@ -1,0 +1,7 @@
+<map id="basicServer.Main.main" name="basicServer.Main.main">
+<area shape="rect" id="node2" href="$classbasic_server_1_1_reactor.html#ab74b6a96ff989298eb36a1cf3fd0e69f" title="basicServer.Reactor.register\lHandler" alt="" coords="211,5,400,43"/>
+<area shape="rect" id="node4" href="$classbasic_server_1_1_reactor.html#aaa28ae533a17acacc0acb5a7161c84e5" title="basicServer.Reactor.start\lServer" alt="" coords="220,67,390,106"/>
+<area shape="rect" id="node3" href="$interfaceevent_handler_1_1_event_handler.html#ada178635174014bad23584547462ac03" title="eventHandler.EventHandler.get\lHandler" alt="" coords="485,5,691,43"/>
+<area shape="rect" id="node5" href="$classbasic_server_1_1_thread_pool_dispatcher.html#a5311a036b85df65c640d955f253ecc83" title="basicServer.ThreadPoolDispatcher.dispatch" alt="" coords="448,74,728,99"/>
+<area shape="rect" id="node6" href="$classbasic_server_1_1_thread_pool_dispatcher.html#a80411d17546dd5ff40af166ef50e2e32" title="basicServer.ThreadPoolDispatcher.dispatchLoop" alt="" coords="776,74,1086,99"/>
+</map>

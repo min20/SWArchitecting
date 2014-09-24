@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * @class ThreadPoolDispatche
+ * @date 2014-09-24
+ * @author min
+ * @brief multi thread를 지원하는 dispatcher. Demultiplexer를 실행시킨다.
+ */
 public class ThreadPoolDispatcher implements Dispatcher {
 
 	static final String NUM_THREADS = "8";

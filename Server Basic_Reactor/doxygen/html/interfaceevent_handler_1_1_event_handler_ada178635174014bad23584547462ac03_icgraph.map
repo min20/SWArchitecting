@@ -1,0 +1,5 @@
+<map id="eventHandler.EventHandler.getHandler" name="eventHandler.EventHandler.getHandler">
+<area shape="rect" id="node2" href="$classbasic_server_1_1_reactor.html#ab74b6a96ff989298eb36a1cf3fd0e69f" title="basicServer.Reactor.register\lHandler" alt="" coords="259,5,448,43"/>
+<area shape="rect" id="node4" href="$classbasic_server_1_1_reactor.html#ab50f8b7b6adf4b18ccca715fa2ca8182" title="basicServer.Reactor.remove\lHandler" alt="" coords="259,67,448,106"/>
+<area shape="rect" id="node3" href="$classbasic_server_1_1_main.html#a0c7ee477ff533ef286ecf5a95148eda8" title="basicServer.Main.main" alt="" coords="497,11,653,37"/>
+</map>

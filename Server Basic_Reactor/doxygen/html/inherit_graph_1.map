@@ -1,0 +1,5 @@
+<map id="그래픽컬한 클래스 계통도" name="그래픽컬한 클래스 계통도">
+<area shape="rect" id="node1" href="$interfacebasic_server_1_1_dispatcher.html" title="dispatcher의 DI를 위한 인터페이스 " alt="" coords="6,30,165,55"/>
+<area shape="rect" id="node2" href="$classbasic_server_1_1_thread_per_dispatcher.html" title="single thread dispatcher. Demultiplexer를 실행시킨다. " alt="" coords="217,5,439,30"/>
+<area shape="rect" id="node3" href="$classbasic_server_1_1_thread_pool_dispatcher.html" title="basicServer.ThreadPoolDispatcher" alt="" coords="214,54,442,79"/>
+</map>

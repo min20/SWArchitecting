@@ -1,0 +1,197 @@
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler}{\section{event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler 클래스 참조}
+\label{classevent_handler_1_1_stream_say_hello_event_handler}\index{event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler}}
+}
+
+
+0x5001 헤더를 받았을 때 실행되는 event handler. \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}{say\+Hello()}를 갖고 있다.  
+
+
+
+
+event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler에 대한 상속 다이어그램 \+: 
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classevent_handler_1_1_stream_say_hello_event_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classevent_handler_1_1_stream_say_hello_event_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a2ff06320bb8ddd881d147d31a46d365b}{get\+Handler} ()
+\item 
+void \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a859dc382ae8a35257af2149a9ed1c6b8}{handle\+Event} (Input\+Stream input\+Stream)
+\end{DoxyCompactItemize}
+\subsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}{say\+Hello} (String\mbox{[}$\,$\mbox{]} params)
+\end{DoxyCompactItemize}
+\subsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static Logger \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a9ce34e287f4621a4bd97e9b133e3a6f8}{logger} = Logger.\+get\+Logger(Stream\+Say\+Hello\+Event\+Handler.\+class.\+get\+Name())
+\item 
+static final int \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a7caabf3a748346a2161f5b671eacc4b4}{D\+A\+T\+A\+\_\+\+S\+I\+Z\+E} = 512
+\item 
+static final int \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_af838acda55ea4de208e013ac0493364a}{T\+O\+K\+E\+N\+\_\+\+N\+U\+M} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+0x5001 헤더를 받았을 때 실행되는 event handler. \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}{say\+Hello()}를 갖고 있다. 
+
+\begin{DoxyDate}{날짜}
+2014-\/09-\/24 
+\end{DoxyDate}
+\begin{DoxyAuthor}{작성자}
+min 
+\end{DoxyAuthor}
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_a2ff06320bb8ddd881d147d31a46d365b}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!get\+Handler@{get\+Handler}}
+\index{get\+Handler@{get\+Handler}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{get\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}String event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+get\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classevent_handler_1_1_stream_say_hello_event_handler_a2ff06320bb8ddd881d147d31a46d365b}
+
+
+\hyperlink{interfaceevent_handler_1_1_event_handler_ada178635174014bad23584547462ac03}{event\+Handler.\+Event\+Handler}를 구현.
+
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+22                                \{
+23         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"0x5001"};
+24     \}
+\end{DoxyCode}
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_a859dc382ae8a35257af2149a9ed1c6b8}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!handle\+Event@{handle\+Event}}
+\index{handle\+Event@{handle\+Event}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{handle\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+handle\+Event (
+\begin{DoxyParamCaption}
+\item[{Input\+Stream}]{input\+Stream}
+\end{DoxyParamCaption}
+)}}\label{classevent_handler_1_1_stream_say_hello_event_handler_a859dc382ae8a35257af2149a9ed1c6b8}
+
+
+\hyperlink{interfaceevent_handler_1_1_event_handler_a4036ea3f27edd7df0caa57f42db27eed}{event\+Handler.\+Event\+Handler}를 구현.
+
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+26                                                      \{
+27         \textcolor{keywordflow}{try} \{
+28             byte[] buffer = \textcolor{keyword}{new} byte[\hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a7caabf3a748346a2161f5b671eacc4b4}{DATA\_SIZE}];
+29             inputStream.read(buffer);
+30 
+31             String data = \textcolor{keyword}{new} String(buffer);
+32 
+33             String[] params = \textcolor{keyword}{new} String[\hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_af838acda55ea4de208e013ac0493364a}{TOKEN\_NUM}];
+34             StringTokenizer token = \textcolor{keyword}{new} StringTokenizer(data, \textcolor{stringliteral}{"|"});
+35 
+36             \textcolor{keywordtype}{int} i = 0;
+37             \textcolor{keywordflow}{while} (token.hasMoreTokens()) \{
+38                 params[i] = token.nextToken();
+39                 ++i;
+40             \}
+41 
+42             \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}{sayHello}(params);
+43 
+44         \} \textcolor{keywordflow}{catch} (IOException e) \{
+45             e.printStackTrace();
+46         \}
+47     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classevent_handler_1_1_stream_say_hello_event_handler_a859dc382ae8a35257af2149a9ed1c6b8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!say\+Hello@{say\+Hello}}
+\index{say\+Hello@{say\+Hello}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{say\+Hello}]{\setlength{\rightskip}{0pt plus 5cm}void event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+say\+Hello (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc}
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+49                                            \{
+50         \textcolor{comment}{//System.out.println("SayHello / NAME: " + params[0] + " / AGE: " + params[1]);}
+51         \hyperlink{classevent_handler_1_1_stream_say_hello_event_handler_a9ce34e287f4621a4bd97e9b133e3a6f8}{logger}.fatal(\textcolor{stringliteral}{"SayHello / NAME: "} + params[0] + \textcolor{stringliteral}{" / AGE: "} + params[1]);
+52     \}
+\end{DoxyCode}
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classevent_handler_1_1_stream_say_hello_event_handler_a6af4d6b8a6ed973d984a2eea55e405bc_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_a7caabf3a748346a2161f5b671eacc4b4}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!D\+A\+T\+A\+\_\+\+S\+I\+Z\+E@{D\+A\+T\+A\+\_\+\+S\+I\+Z\+E}}
+\index{D\+A\+T\+A\+\_\+\+S\+I\+Z\+E@{D\+A\+T\+A\+\_\+\+S\+I\+Z\+E}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{D\+A\+T\+A\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}final int event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+D\+A\+T\+A\+\_\+\+S\+I\+Z\+E = 512\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classevent_handler_1_1_stream_say_hello_event_handler_a7caabf3a748346a2161f5b671eacc4b4}
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_a9ce34e287f4621a4bd97e9b133e3a6f8}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!logger@{logger}}
+\index{logger@{logger}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{logger}]{\setlength{\rightskip}{0pt plus 5cm}Logger event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+logger = Logger.\+get\+Logger(Stream\+Say\+Hello\+Event\+Handler.\+class.\+get\+Name())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classevent_handler_1_1_stream_say_hello_event_handler_a9ce34e287f4621a4bd97e9b133e3a6f8}
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 16 번째 라인에서 정의되었습니다.
+
+\hypertarget{classevent_handler_1_1_stream_say_hello_event_handler_af838acda55ea4de208e013ac0493364a}{\index{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}!T\+O\+K\+E\+N\+\_\+\+N\+U\+M@{T\+O\+K\+E\+N\+\_\+\+N\+U\+M}}
+\index{T\+O\+K\+E\+N\+\_\+\+N\+U\+M@{T\+O\+K\+E\+N\+\_\+\+N\+U\+M}!event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler@{event\+Handler\+::\+Stream\+Say\+Hello\+Event\+Handler}}
+\subsubsection[{T\+O\+K\+E\+N\+\_\+\+N\+U\+M}]{\setlength{\rightskip}{0pt plus 5cm}final int event\+Handler.\+Stream\+Say\+Hello\+Event\+Handler.\+T\+O\+K\+E\+N\+\_\+\+N\+U\+M = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classevent_handler_1_1_stream_say_hello_event_handler_af838acda55ea4de208e013ac0493364a}
+
+
+Stream\+Say\+Hello\+Event\+Handler.\+java 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/event\+Handler/\hyperlink{_stream_say_hello_event_handler_8java}{Stream\+Say\+Hello\+Event\+Handler.\+java}\end{DoxyCompactItemize}

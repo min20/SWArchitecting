@@ -5,6 +5,12 @@ import java.net.ServerSocket;
 
 import eventHandler.EventHandler;
 
+/**
+ * @class Reactor
+ * @date 2014-09-24
+ * @author min
+ * @brief dispatcher 관리, header와 대응되는 event handler를 관리.  
+ */
 public class Reactor {
 	private ServerSocket serverSocket;
 	private HandleMap handleMap;

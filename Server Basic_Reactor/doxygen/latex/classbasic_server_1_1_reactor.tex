@@ -1,0 +1,210 @@
+\hypertarget{classbasic_server_1_1_reactor}{\section{basic\+Server.\+Reactor 클래스 참조}
+\label{classbasic_server_1_1_reactor}\index{basic\+Server.\+Reactor@{basic\+Server.\+Reactor}}
+}
+
+
+dispatcher 관리, header와 대응되는 event handler를 관리.  
+
+
+
+
+basic\+Server.\+Reactor에 대한 협력 다이어그램\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classbasic_server_1_1_reactor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbasic_server_1_1_reactor_ad31c6a01771438f1f124eba778e49c0a}{Reactor} (int port)
+\item 
+void \hyperlink{classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5}{start\+Server} ()
+\item 
+void \hyperlink{classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f}{register\+Handler} (\hyperlink{interfaceevent_handler_1_1_event_handler}{Event\+Handler} handler)
+\item 
+void \hyperlink{classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182}{remove\+Handler} (\hyperlink{interfaceevent_handler_1_1_event_handler}{Event\+Handler} handler)
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Server\+Socket \hyperlink{classbasic_server_1_1_reactor_a2ddae2bb37e01fa74cfdd54b02ad00d0}{server\+Socket}
+\item 
+\hyperlink{classbasic_server_1_1_handle_map}{Handle\+Map} \hyperlink{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{handle\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+dispatcher 관리, header와 대응되는 event handler를 관리. 
+
+\begin{DoxyDate}{날짜}
+2014-\/09-\/24 
+\end{DoxyDate}
+\begin{DoxyAuthor}{작성자}
+min 
+\end{DoxyAuthor}
+
+
+Reactor.\+java 파일의 14 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{생성자 \& 소멸자 문서화}
+\hypertarget{classbasic_server_1_1_reactor_ad31c6a01771438f1f124eba778e49c0a}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!Reactor@{Reactor}}
+\index{Reactor@{Reactor}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{Reactor}]{\setlength{\rightskip}{0pt plus 5cm}basic\+Server.\+Reactor.\+Reactor (
+\begin{DoxyParamCaption}
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_reactor_ad31c6a01771438f1f124eba778e49c0a}
+
+
+Reactor.\+java 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+18                              \{
+19         \hyperlink{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{handleMap} = \textcolor{keyword}{new} HandleMap();
+20 
+21         \textcolor{keywordflow}{try} \{
+22             \hyperlink{classbasic_server_1_1_reactor_a2ddae2bb37e01fa74cfdd54b02ad00d0}{serverSocket} = \textcolor{keyword}{new} ServerSocket(port);
+23         \} \textcolor{keywordflow}{catch} (IOException e) \{
+24             e.printStackTrace();
+25         \}
+26     \}
+\end{DoxyCode}
+
+
+\subsection{멤버 함수 문서화}
+\hypertarget{classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!register\+Handler@{register\+Handler}}
+\index{register\+Handler@{register\+Handler}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{register\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Reactor.\+register\+Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Handler}}]{handler}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f}
+
+
+Reactor.\+java 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+34                                                       \{
+35         \hyperlink{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{handleMap}.put(handler.getHandler(), handler);
+36     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!remove\+Handler@{remove\+Handler}}
+\index{remove\+Handler@{remove\+Handler}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{remove\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Reactor.\+remove\+Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Handler}}]{handler}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182}
+
+
+Reactor.\+java 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+38                                                     \{
+39         \hyperlink{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{handleMap}.remove(handler.getHandler());
+40     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!start\+Server@{start\+Server}}
+\index{start\+Server@{start\+Server}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{start\+Server}]{\setlength{\rightskip}{0pt plus 5cm}void basic\+Server.\+Reactor.\+start\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5}
+
+
+Reactor.\+java 파일의 28 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}
+28                               \{
+29         \textcolor{comment}{// ThreadPerDispatcher dispatcher = new ThreadPerDispatcher();}
+30         ThreadPoolDispatcher dispatcher = \textcolor{keyword}{new} ThreadPoolDispatcher();
+31         dispatcher.dispatch(\hyperlink{classbasic_server_1_1_reactor_a2ddae2bb37e01fa74cfdd54b02ad00d0}{serverSocket}, \hyperlink{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{handleMap});
+32     \}
+\end{DoxyCode}
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\hypertarget{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!handle\+Map@{handle\+Map}}
+\index{handle\+Map@{handle\+Map}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{handle\+Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handle\+Map} basic\+Server.\+Reactor.\+handle\+Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classbasic_server_1_1_reactor_a74841c32eee00227bbd43e8d016aad20}
+
+
+Reactor.\+java 파일의 16 번째 라인에서 정의되었습니다.
+
+\hypertarget{classbasic_server_1_1_reactor_a2ddae2bb37e01fa74cfdd54b02ad00d0}{\index{basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}!server\+Socket@{server\+Socket}}
+\index{server\+Socket@{server\+Socket}!basic\+Server\+::\+Reactor@{basic\+Server\+::\+Reactor}}
+\subsubsection[{server\+Socket}]{\setlength{\rightskip}{0pt plus 5cm}Server\+Socket basic\+Server.\+Reactor.\+server\+Socket\hspace{0.3cm}{\ttfamily [private]}}}\label{classbasic_server_1_1_reactor_a2ddae2bb37e01fa74cfdd54b02ad00d0}
+
+
+Reactor.\+java 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/basic\+Server/\hyperlink{_reactor_8java}{Reactor.\+java}\end{DoxyCompactItemize}

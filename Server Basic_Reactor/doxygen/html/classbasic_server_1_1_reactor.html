@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>My Project: basicServer.Reactor 클래스 참조</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="namespaces.html"><span>패키지</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="inherits.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classbasic_server_1_1_reactor.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>클래스</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>네임스페이스들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>변수</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="classbasic_server_1_1_reactor-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">basicServer.Reactor 클래스 참조</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>dispatcher 관리, header와 대응되는 event handler를 관리.  
+ <a href="classbasic_server_1_1_reactor.html#details">더 자세히 ...</a></p>
+<div class="dynheader">
+basicServer.Reactor에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor__coll__graph.png" border="0" usemap="#basic_server_8_reactor_coll__map" alt="Collaboration graph"/></div>
+<map name="basic_server_8_reactor_coll__map" id="basic_server_8_reactor_coll__map">
+<area shape="rect" id="node3" href="classbasic_server_1_1_handle_map.html" title="header와 그에 대응하는 event handler를 기억함 " alt="" coords="131,145,293,218"/></map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ad31c6a01771438f1f124eba778e49c0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#ad31c6a01771438f1f124eba778e49c0a">Reactor</a> (int port)</td></tr>
+<tr class="separator:ad31c6a01771438f1f124eba778e49c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa28ae533a17acacc0acb5a7161c84e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#aaa28ae533a17acacc0acb5a7161c84e5">startServer</a> ()</td></tr>
+<tr class="separator:aaa28ae533a17acacc0acb5a7161c84e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74b6a96ff989298eb36a1cf3fd0e69f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#ab74b6a96ff989298eb36a1cf3fd0e69f">registerHandler</a> (<a class="el" href="interfaceevent_handler_1_1_event_handler.html">EventHandler</a> handler)</td></tr>
+<tr class="separator:ab74b6a96ff989298eb36a1cf3fd0e69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab50f8b7b6adf4b18ccca715fa2ca8182"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#ab50f8b7b6adf4b18ccca715fa2ca8182">removeHandler</a> (<a class="el" href="interfaceevent_handler_1_1_event_handler.html">EventHandler</a> handler)</td></tr>
+<tr class="separator:ab50f8b7b6adf4b18ccca715fa2ca8182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:a2ddae2bb37e01fa74cfdd54b02ad00d0"><td class="memItemLeft" align="right" valign="top">ServerSocket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#a2ddae2bb37e01fa74cfdd54b02ad00d0">serverSocket</a></td></tr>
+<tr class="separator:a2ddae2bb37e01fa74cfdd54b02ad00d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74841c32eee00227bbd43e8d016aad20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic_server_1_1_handle_map.html">HandleMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">handleMap</a></td></tr>
+<tr class="separator:a74841c32eee00227bbd43e8d016aad20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>dispatcher 관리, header와 대응되는 event handler를 관리. </p>
+<dl class="section date"><dt>날짜</dt><dd>2014-09-24 </dd></dl>
+<dl class="section author"><dt>작성자</dt><dd>min </dd></dl>
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00014">14</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">생성자 &amp; 소멸자 문서화</h2>
+<a class="anchor" id="ad31c6a01771438f1f124eba778e49c0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">basicServer.Reactor.Reactor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00018">18</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                             {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">handleMap</a> = <span class="keyword">new</span> HandleMap();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="classbasic_server_1_1_reactor.html#a2ddae2bb37e01fa74cfdd54b02ad00d0">serverSocket</a> = <span class="keyword">new</span> ServerSocket(port);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a74841c32eee00227bbd43e8d016aad20"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">basicServer.Reactor.handleMap</a></div><div class="ttdeci">HandleMap handleMap</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00016">Reactor.java:16</a></div></div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a2ddae2bb37e01fa74cfdd54b02ad00d0"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a2ddae2bb37e01fa74cfdd54b02ad00d0">basicServer.Reactor.serverSocket</a></div><div class="ttdeci">ServerSocket serverSocket</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00015">Reactor.java:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">멤버 함수 문서화</h2>
+<a class="anchor" id="ab74b6a96ff989298eb36a1cf3fd0e69f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basicServer.Reactor.registerHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceevent_handler_1_1_event_handler.html">EventHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00034">34</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                      {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">handleMap</a>.put(handler.getHandler(), handler);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a74841c32eee00227bbd43e8d016aad20"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">basicServer.Reactor.handleMap</a></div><div class="ttdeci">HandleMap handleMap</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00016">Reactor.java:16</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_cgraph.png" border="0" usemap="#classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_cgraph" alt=""/></div>
+<map name="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_cgraph" id="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_cgraph">
+<area shape="rect" id="node2" href="interfaceevent_handler_1_1_event_handler.html#ada178635174014bad23584547462ac03" title="eventHandler.EventHandler.get\lHandler" alt="" coords="242,5,448,43"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_icgraph.png" border="0" usemap="#classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_icgraph" alt=""/></div>
+<map name="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_icgraph" id="classbasic_server_1_1_reactor_ab74b6a96ff989298eb36a1cf3fd0e69f_icgraph">
+<area shape="rect" id="node2" href="classbasic_server_1_1_main.html#a0c7ee477ff533ef286ecf5a95148eda8" title="basicServer.Main.main" alt="" coords="243,11,399,37"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab50f8b7b6adf4b18ccca715fa2ca8182"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basicServer.Reactor.removeHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceevent_handler_1_1_event_handler.html">EventHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00038">38</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">handleMap</a>.remove(handler.getHandler());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a74841c32eee00227bbd43e8d016aad20"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">basicServer.Reactor.handleMap</a></div><div class="ttdeci">HandleMap handleMap</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00016">Reactor.java:16</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182_cgraph.png" border="0" usemap="#classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182_cgraph" alt=""/></div>
+<map name="classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182_cgraph" id="classbasic_server_1_1_reactor_ab50f8b7b6adf4b18ccca715fa2ca8182_cgraph">
+<area shape="rect" id="node2" href="interfaceevent_handler_1_1_event_handler.html#ada178635174014bad23584547462ac03" title="eventHandler.EventHandler.get\lHandler" alt="" coords="242,5,448,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa28ae533a17acacc0acb5a7161c84e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void basicServer.Reactor.startServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00028">28</a> 번째 라인에서 정의되었습니다.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                              {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// ThreadPerDispatcher dispatcher = new ThreadPerDispatcher();</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        ThreadPoolDispatcher dispatcher = <span class="keyword">new</span> ThreadPoolDispatcher();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        dispatcher.dispatch(<a class="code" href="classbasic_server_1_1_reactor.html#a2ddae2bb37e01fa74cfdd54b02ad00d0">serverSocket</a>, <a class="code" href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">handleMap</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a74841c32eee00227bbd43e8d016aad20"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a74841c32eee00227bbd43e8d016aad20">basicServer.Reactor.handleMap</a></div><div class="ttdeci">HandleMap handleMap</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00016">Reactor.java:16</a></div></div>
+<div class="ttc" id="classbasic_server_1_1_reactor_html_a2ddae2bb37e01fa74cfdd54b02ad00d0"><div class="ttname"><a href="classbasic_server_1_1_reactor.html#a2ddae2bb37e01fa74cfdd54b02ad00d0">basicServer.Reactor.serverSocket</a></div><div class="ttdeci">ServerSocket serverSocket</div><div class="ttdef"><b>Definition:</b> <a href="_reactor_8java_source.html#l00015">Reactor.java:15</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_cgraph.png" border="0" usemap="#classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_cgraph" alt=""/></div>
+<map name="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_cgraph" id="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_cgraph">
+<area shape="rect" id="node2" href="classbasic_server_1_1_thread_pool_dispatcher.html#a5311a036b85df65c640d955f253ecc83" title="basicServer.ThreadPoolDispatcher.dispatch" alt="" coords="224,11,504,37"/><area shape="rect" id="node3" href="classbasic_server_1_1_thread_pool_dispatcher.html#a80411d17546dd5ff40af166ef50e2e32" title="basicServer.ThreadPoolDispatcher.dispatchLoop" alt="" coords="552,11,862,37"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_icgraph.png" border="0" usemap="#classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_icgraph" alt=""/></div>
+<map name="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_icgraph" id="classbasic_server_1_1_reactor_aaa28ae533a17acacc0acb5a7161c84e5_icgraph">
+<area shape="rect" id="node2" href="classbasic_server_1_1_main.html#a0c7ee477ff533ef286ecf5a95148eda8" title="basicServer.Main.main" alt="" coords="225,11,381,37"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이타 문서화</h2>
+<a class="anchor" id="a74841c32eee00227bbd43e8d016aad20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasic_server_1_1_handle_map.html">HandleMap</a> basicServer.Reactor.handleMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00016">16</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ddae2bb37e01fa74cfdd54b02ad00d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ServerSocket basicServer.Reactor.serverSocket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="_reactor_8java_source.html">Reactor.java</a> 파일의 <a class="el" href="_reactor_8java_source.html#l00015">15</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>src/basicServer/<a class="el" href="_reactor_8java_source.html">Reactor.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacebasic_server.html">basicServer</a></li><li class="navelem"><a class="el" href="classbasic_server_1_1_reactor.html">Reactor</a></li>
+    <li class="footer">생성시간 : 수 9월 24 2014 22:12:34, 프로젝트명 : My Project, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

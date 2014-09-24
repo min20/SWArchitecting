@@ -6,6 +6,12 @@ import java.util.StringTokenizer;
 
 import org.apache.log4j.Logger;
 
+/**
+ * @class StreamSayHelloEventHandler
+ * @date 2014-09-24
+ * @author min
+ * @brief 0x5001 헤더를 받았을 때 실행되는 event handler. sayHello()를 갖고 있다.
+ */
 public class StreamSayHelloEventHandler implements EventHandler {
 	private static Logger logger = Logger.getLogger(StreamSayHelloEventHandler.class.getName());
 	
