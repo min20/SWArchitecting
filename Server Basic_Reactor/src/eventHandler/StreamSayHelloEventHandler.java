@@ -4,7 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.StringTokenizer;
 
+import org.apache.log4j.Logger;
+
 public class StreamSayHelloEventHandler implements EventHandler {
+	private static Logger logger = Logger.getLogger(StreamSayHelloEventHandler.class.getName());
+	
 	private static final int DATA_SIZE = 512;
 	private static final int TOKEN_NUM = 2;
 
@@ -37,7 +41,8 @@ public class StreamSayHelloEventHandler implements EventHandler {
 	}
 
 	private void sayHello(String[] params) {
-		System.out.println("SayHello / NAME: " + params[0] + " / AGE: " + params[1]);
+		//System.out.println("SayHello / NAME: " + params[0] + " / AGE: " + params[1]);
+		logger.fatal("SayHello / NAME: " + params[0] + " / AGE: " + params[1]);
 	}
 
 }

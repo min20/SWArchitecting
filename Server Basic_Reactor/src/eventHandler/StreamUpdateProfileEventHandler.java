@@ -4,7 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.StringTokenizer;
 
+import org.apache.log4j.Logger;
+
 public class StreamUpdateProfileEventHandler implements EventHandler {
+	private static Logger logger = Logger.getLogger(StreamUpdateProfileEventHandler.class.getName());
+	
 	private static final int DATA_SIZE = 1024;
 	private static final int TOKEN_NUM = 5;
 
@@ -37,7 +41,10 @@ public class StreamUpdateProfileEventHandler implements EventHandler {
 	}
 
 	private void updateProfile(String[] params) {
-		System.out.println("UpdateProfile / " + "ID: " + params[0] + " / " + "PASSWORD: " + params[1] + " / "
+		//System.out.println("UpdateProfile / " + "ID: " + params[0] + " / " + "PASSWORD: " + params[1] + " / "
+		//		+ "NAME: " + params[2] + " / " + "AGE: " + params[3] + " / " + "GENDER: " + params[4]);
+		
+		logger.fatal("UpdateProfile / " + "ID: " + params[0] + " / " + "PASSWORD: " + params[1] + " / "
 				+ "NAME: " + params[2] + " / " + "AGE: " + params[3] + " / " + "GENDER: " + params[4]);
 	}
 

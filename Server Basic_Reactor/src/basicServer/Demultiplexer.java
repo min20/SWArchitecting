@@ -1,10 +1,17 @@
 package basicServer;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 
+import org.apache.log4j.Logger;
+
 public class Demultiplexer implements Runnable {
+	private static Logger logger = Logger.getLogger(Demultiplexer.class.getName());
+	
+	private final int MAX_DATA_SIZE = 512 + 6;
 	private final int HEADER_SIZE = 6;
 
 	private Socket socket;
@@ -18,11 +25,24 @@ public class Demultiplexer implements Runnable {
 	@Override
 	public void run() {
 		try {
-			InputStream inputStream = socket.getInputStream();
+			InputStream originalInputStream = socket.getInputStream();
+			InputStream inputStream;
 
-			byte[] buffer = new byte[HEADER_SIZE];
-			inputStream.read(buffer);
-			String header = new String(buffer);
+			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+			byte[] fullBuffer = new byte[MAX_DATA_SIZE];
+			byte[] headerBuffer = new byte[HEADER_SIZE];
+			
+			originalInputStream.read(fullBuffer);
+			byteArrayOutputStream.write(fullBuffer);
+			
+			byteArrayOutputStream.flush();
+
+			inputStream = new ByteArrayInputStream(byteArrayOutputStream.toByteArray()); 
+			
+			logger.fatal("INPUT: " + new String(fullBuffer));
+			
+			inputStream.read(headerBuffer);
+			String header = new String(headerBuffer);
 
 			handleMap.get(header).handleEvent(inputStream);
 		} catch (IOException e) {
