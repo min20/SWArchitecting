@@ -2,23 +2,21 @@ package basicServer;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Dispatcher {
+public class Demultiplexer implements Runnable {
 	private final int HEADER_SIZE = 6;
-	private Socket socket;
 
-	public void dispatch(ServerSocket serverSocket, HandleMap handleMap) {
-		try {
-			socket = serverSocket.accept();
-			demultiplex(socket, handleMap);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+	private Socket socket;
+	private HandleMap handleMap;
+	
+	public Demultiplexer(Socket socket, HandleMap handleMap) {
+		this.socket = socket;
+		this.handleMap = handleMap;
 	}
 
-	public void demultiplex(Socket socket, HandleMap handleMap) {
+	@Override
+	public void run() {
 		try {
 			InputStream inputStream = socket.getInputStream();
 
@@ -29,7 +27,7 @@ public class Dispatcher {
 			handleMap.get(header).handleEvent(inputStream);
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}		
 	}
 
 }
