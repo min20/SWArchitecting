@@ -14,7 +14,15 @@ public class ServerInitializer {
 
 	public static void main(String[] args) {
 		System.out.println("SERVER START at PORT: " + PORT + "!");
-
+		
+		NioHandleMap handleMap = new NioHandleMap();
+		
+		NioEventHandler sayHelloHandler = new NioSayHelloEventHandler();
+		NioEventHandler updateProfileHandler = new NioUpdateProfileEventHandler();
+		
+		handleMap.put(sayHelloHandler.getHeader(), sayHelloHandler);
+		handleMap.put(updateProfileHandler.getHeader(), updateProfileHandler);
+		
 		// 고정 스레드 풀 생성. treadPoolSize 만큼의 스레드를 사용한다.
 		ExecutorService executor = Executors.newFixedThreadPool(threadPoolSize);
 
@@ -27,7 +35,7 @@ public class ServerInitializer {
 			listener.bind(new InetSocketAddress(PORT), backlog);
 			
 			// 접속 결과를 비동기 콜백으로 받음.
-			listener.accept(listener, new Dispatcher());
+			listener.accept(listener, new Dispatcher(handleMap));
 			
 		} catch (IOException e) {
 			e.printStackTrace();
