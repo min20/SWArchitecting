@@ -12,8 +12,8 @@ import org.apache.log4j.Logger;
  * @author min
  * @brief 0x5001 헤더를 받았을 때 실행되는 event handler. sayHello()를 갖고 있다.
  */
-public class StreamSayHelloEventHandler implements EventHandler {
-	private static Logger logger = Logger.getLogger(StreamSayHelloEventHandler.class.getName());
+public class ReactorSayHelloEventHandler implements EventHandler {
+	private static Logger logger = Logger.getLogger(ReactorSayHelloEventHandler.class.getName());
 	
 	private static final int DATA_SIZE = 512;
 	private static final int TOKEN_NUM = 2;

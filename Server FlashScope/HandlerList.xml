@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serverList>
+	<server name="reactor">
+		<handler header="0x5001">reactor.StreamSayHelloEventHandler</handler>
+		<handler header="0x6001">reactor.StreamUpdateProfileEventHandler</handler>
+	</server>
+	<server name="proactor">
+		<handler header="0x5001">proactor.NioSayHelloEventHandler</handler>
+		<handler header="0x6001">proactor.NioUpdateProfileEventHandler</handler>
+		<handler header="0x7001">proactor.NioFileWriteEventHandler</handler>
+	</server>
+</serverList>

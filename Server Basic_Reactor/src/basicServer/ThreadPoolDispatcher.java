@@ -32,9 +32,9 @@ public class ThreadPoolDispatcher implements Dispatcher {
 			};
 			thread.start();
 			
-			System.out.println("CREATE / START Thread: " + thread.getName());
+			//System.out.println("CREATE / START Thread: " + thread.getName());
 		}
-		System.out.println("INTERATIVE SERVER STARTED IN MAIN THREAD: " + Thread.currentThread().getName());
+		//System.out.println("INTERATIVE SERVER STARTED IN MAIN THREAD: " + Thread.currentThread().getName());
 		
 		dispatchLoop(serverSocket, handleMap);
 	}

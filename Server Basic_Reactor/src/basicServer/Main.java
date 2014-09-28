@@ -1,9 +1,8 @@
 package basicServer;
 
-import org.apache.log4j.Logger;
-
-import eventHandler.StreamSayHelloEventHandler;
-import eventHandler.StreamUpdateProfileEventHandler;
+import eventHandler.ReactorFileWriteEventHandler;
+import eventHandler.ReactorSayHelloEventHandler;
+import eventHandler.ReactorUpdateProfileEventHandler;
 
 /**
  * @class Main
@@ -12,8 +11,6 @@ import eventHandler.StreamUpdateProfileEventHandler;
  * @brief main함수를 갖고 있다. reactor를 new하고 실행시킨다.  
  */
 public class Main {
-	private static Logger logger = Logger.getLogger(Main.class.getName()); 
-
 	public static final int PORT = 5000;
 
 	public static void main(String[] args) {
@@ -29,8 +26,9 @@ public class Main {
 
 		Reactor reactor = new Reactor(PORT);
 
-		reactor.registerHandler(new StreamSayHelloEventHandler());
-		reactor.registerHandler(new StreamUpdateProfileEventHandler());
+		reactor.registerHandler(new ReactorSayHelloEventHandler());
+		reactor.registerHandler(new ReactorUpdateProfileEventHandler());
+		reactor.registerHandler(new ReactorFileWriteEventHandler());
 
 		reactor.startServer();
 	}

@@ -12,8 +12,8 @@ import org.apache.log4j.Logger;
  * @author min
  * @brief 0x6001 헤더를 받았을 때 실행되는 event handler. updateProfile()를 갖고 있다.
  */
-public class StreamUpdateProfileEventHandler implements EventHandler {
-	private static Logger logger = Logger.getLogger(StreamUpdateProfileEventHandler.class.getName());
+public class ReactorUpdateProfileEventHandler implements EventHandler {
+	private static Logger logger = Logger.getLogger(ReactorUpdateProfileEventHandler.class.getName());
 	
 	private static final int DATA_SIZE = 1024;
 	private static final int TOKEN_NUM = 5;
